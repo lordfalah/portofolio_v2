@@ -31,6 +31,10 @@ export function showErrorToast(err: unknown) {
   });
 }
 
+export function isObjectLike(value: object) {
+  return Object.prototype.toString.call(value) === "[object Object]";
+}
+
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
   const now = new Date();

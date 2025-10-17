@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ChatHeader } from "@/app/chat/_components/chat-header";
-import { ChatInterface } from "@/app/chat/_components/chat-interface";
+import { ChatInterface } from "@/app/chat/_components/chat-interfacesss";
 import { siteConfig } from "@/config/site.config";
 
 export const metadata = {
