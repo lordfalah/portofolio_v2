@@ -11,6 +11,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 import { fontHeading } from "@/lib/fonts";
+import { Toaster } from "@/components/ui/sonner";
 
 export const viewport: Viewport = {
   colorScheme: "dark light",
@@ -41,6 +42,8 @@ export default function RootLayout({
         )}
       >
         <NextTopLoader />
+        <Toaster position="top-center" />
+
         <ThemeProvider>
           <Navbar />
           <main>

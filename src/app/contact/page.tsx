@@ -9,7 +9,7 @@ export const metadata = buildMetadata({
 
 export default function ContactPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-4 pt-8 pb-12 sm:px-6 lg:px-8">
+    <main className="flex min-h-screen items-center justify-center px-4 pt-20 pb-5 sm:px-6 lg:px-8">
       <ContactCard />
     </main>
   );

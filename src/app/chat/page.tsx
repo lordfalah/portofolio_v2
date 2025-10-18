@@ -13,7 +13,7 @@ export const metadata = {
 export default function ChatPage() {
   return (
     <div className="min-h-screen">
-      <div className="mx-auto mt-16 max-w-4xl px-6 md:mt-24">
+      <div className="mx-auto mt-20 max-w-4xl px-6 md:mt-24">
         <ChatHeader />
         <Suspense fallback={<ChatSkeleton />}>
           <ChatInterface />

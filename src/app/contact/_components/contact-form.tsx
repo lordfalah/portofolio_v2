@@ -58,8 +58,6 @@ export default function ContactForm() {
               });
               throw new Error(res.message);
             }
-
-            console.log(res);
           } catch (err) {
             showErrorToast(err);
           } finally {
@@ -67,7 +65,7 @@ export default function ContactForm() {
           }
         },
         {
-          loading: "Load...",
+          loading: "Process...",
           success: "Success Sending!",
           error: (err) => getErrorMessage(err),
           position: "top-center",
@@ -100,7 +98,7 @@ export default function ContactForm() {
                   </InputGroup>
                 </FormControl>
                 <FormDescription>
-                  This is your public display name.
+                  Please enter your full name so I know who to reply to.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -126,7 +124,7 @@ export default function ContactForm() {
                   </InputGroup>
                 </FormControl>
                 <FormDescription>
-                  This is your public display name.
+                  We&apos;ll use this email address to send you a reply.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -138,15 +136,21 @@ export default function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel htmlFor="message">Message</FormLabel>
+                <FormLabel htmlFor="message">
+                  Your Message or Project Details
+                </FormLabel>
                 <FormControl>
                   <AutosizeTextarea
                     autoComplete="off"
                     id="message"
-                    placeholder="Tell me about your project or question"
+                    placeholder="Describe your project, question, or inquiry here..."
                     {...field}
                   />
                 </FormControl>
+                <FormDescription>
+                  For project inquiries, please include your budget, timeline,
+                  and goals.
+                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
