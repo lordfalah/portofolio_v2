@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
     github: "https://github.com/lordfalah",
     linkedin: "https://www.linkedin.com/in/irfinfalah/",
     tips: "https://pay.muhammadfiaz.com",
-    email: "mailto:contact@irfin0falah@gmail.com",
+    email: "mailto:irfin0falah@gmail.com",
   },
   social: [
     {
